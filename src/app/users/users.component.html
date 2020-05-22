@@ -1,0 +1,30 @@
+
+<!-- <ul *ngFor="let user of Users">
+    <li>
+        {{user.Name}}
+    </li>
+</ul> -->
+<div class="container">
+    <h1 style="text-align:center;background-color: dodgerblue;color:white">Users From Laravel</h1>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>User Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+           <tr *ngFor="let user of Users;let i=index">
+               <td>{{i+1}}</td>
+               <td>{{user.Name}}</td>
+               <td>{{user.Age}}</td>
+               <td>{{user.Email}}</td>
+               <td>{{user.City}}</td>
+           </tr>
+        </tbody>
+    </table>
+</div>
